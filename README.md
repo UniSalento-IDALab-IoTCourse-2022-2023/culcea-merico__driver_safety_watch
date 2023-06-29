@@ -21,6 +21,7 @@ Eseguire:
 La board ESP32 non è utilizzabile di default su Arduino IDE. Per aggiungerla seguire i passi della seguente [guida](https://dronebotworkshop.com/esp32-intro/), ovvero:
 - Inserire `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json` all'interno del campo "Additional board managers URLs" nelle preferenze di Arduino Studio.
 - Aprire il Board Manager (si trova aprendo "Tools" poi "Board"), nel campo di ricerca scrivere "esp32" per poi installare "esp32 by Espressif System".
+
 ![Libreria per esp32](images/esp32_lib.png)
 
 ### Script ESP32
@@ -30,6 +31,7 @@ Utilizzando Arduino IDE, aprire il file. Collegare il device alla porta USB del 
 ### Eseguire il gateway
 Avviare il gateway come specificato nel README del relativo progetto.
 Dopo l'avvio, la board si collega all'ESP32 e invierà i dati del battito cardiaco tramite BLE.
+
 ![Script ESP32 in esecuzione](images/exec.png)
 
 ## Spiegazione codice
