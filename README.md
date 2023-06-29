@@ -9,7 +9,7 @@ Le componenti usate sono:
 - Backend: server che salva i dati di alert inviati del gateway, fornisce una REST API per poterne fare uso e permette di visualizzare una dashboard real-time dei dati aggregati. Il componente è disponibile al seguente [link](https://github.com/UniSalento-IDALab-IoTCourse-2022-2023/wot-project-2022-2023-Dashboard-Cloud-Culcea_Merico).
 
 
-![](arc_fin.png)
+![](images/arc_fin.png)
 
 ## Esecuzione
 Eseguire:
@@ -21,16 +21,16 @@ Eseguire:
 La board ESP32 non è utilizzabile di default su Arduino IDE. Per aggiungerla seguire i passi della seguente [guida](https://dronebotworkshop.com/esp32-intro/), ovvero:
 - Inserire `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json` all'interno del campo "Additional board managers URLs" nelle preferenze di Arduino Studio.
 - Aprire il Board Manager (si trova aprendo "Tools" poi "Board"), nel campo di ricerca scrivere "esp32" per poi installare "esp32 by Espressif System".
-![Libreria per esp32](/images/esp32_lib)
+![Libreria per esp32](images/esp32_lib)
 
 ### Script ESP32
 Utilizzando Arduino IDE, aprire il file. Collegare il device alla porta USB del computer, selezionare la board corretta (menù "Tools" poi "Board") e la porta corretta (menù "Tools" poi "port") e fare l'upload del codice (menù "Sketch" e poi "Upload"). Dopo la compilazione e il caricamento, sulla serial board comparirà:
-![Script ESP32 all'avvio](/images/start)
+![Script ESP32 all'avvio](images/start)
 
 ### Eseguire il gateway
 Avviare il gateway come specificato nel README del relativo progetto.
 Dopo l'avvio, la board si collega all'ESP32 e invierà i dati del battito cardiaco tramite BLE.
-![Script ESP32 in esecuzione](/images/exec)
+![Script ESP32 in esecuzione](images/exec)
 
 ## Spiegazione codice
 
